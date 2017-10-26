@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
 </head>
 <body>
-	<!--------- 第一行 ----------->
-	<div id="header-warp">
+	<!-- 第一行 -->
+	<div id="header-wrap">
 		<header>
 			<span>欢迎进入钻石小鸟官网</span>
 			<span><a href="#">注册</a></span>
@@ -20,7 +21,7 @@
 				<li><a href="#">手机官网</a></li>
 			</ul>
 		</header>
-
+	</div>
 
 
 		<!--------- 第二行 -------->
@@ -33,7 +34,64 @@
 				</form>
 			</div>
 		</div>
-	</div>
-	
+		<!--------第三行-------->	
+		<div id="nav-wrap">
+			<div id="nav">
+				<ul id="nav-ul">
+					<li><a href="">首页</a></li>
+					<li><a href="">钻石</a></li>
+					<li><a href="">婚戒</a></li>
+					<li><a href="">对戒</a></li>
+					<li><a href="">配饰</a></li>
+					<li><a href="">定制</a></li>
+					<li><a href="">体验中心</a></li>
+				</ul>
+				<ul id="zy-ul">
+					<li><a href="">商务加盟</a></li>
+					<li><a href="">品牌故事</a></li>
+					<li><a href="">鸟巢讨论</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--------第四行-------->
+	<div id="banner">
+		<div class="swiper-container">
+    	<div class="swiper-wrapper">
+	    <div class="swiper-slide"><img src="img/banner1.jpg" alt=""></div>
+	    <div class="swiper-slide"><img src="img/banner2.jpg" alt=""></div>
+	    <div class="swiper-slide"><img src="img/banner3.jpg" alt=""></div>
+	    <div class="swiper-slide"><img src="img/banner4.jpg" alt=""></div>
+	    <div class="swiper-slide"><img src="img/banner5.jpg" alt=""></div>
+	       
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	    
+	    <!-- 如果需要导航按钮 -->
+	    <div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div>
+    
+
+		</div>
+	</div>	
+
+
+		<!--------第五行-------->
+		<div id="box01-wrap">
+			<div id="box01">
+				<div id=box01-left>
+					<h2>设计订婚戒指</h2>
+				</div>
+				<div id="box01-right"></div>
+			</div>
+		</div>
+
 </body>
 </html>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/lunbo.js"></script>
+
+
+
+
+
