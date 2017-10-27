@@ -81,15 +81,81 @@
 			<div id="box01">
 				<div id=box01-left>
 					<h2>设计订婚戒指</h2>
+					<img id="left-img1"
+					src="img/_left1.png" >
+					<img id="left-img2"
+					src="img/_left2.png" >
+					<img id="left-img3"
+					src="img/_left3.png" >
+					
+					<div id="left-one">从挑选钻石开始</div>
+					<div id="left-two">从挑选款式开始</div>
 				</div>
-				<div id="box01-right"></div>
+				<div id="box01-right">
+					<img src="img/_right1.jpg">
+				</div>
 			</div>
 		</div>
 
+
+      <!--------第六行-------->
+
+      <div id="box02-wrap">
+      	<div id="box02">
+      		<h2>系列产品</h2>
+      		<div id="box02-nav">
+      			<ul>
+      				<li id="liOne"><a href="">推荐</a></li>
+      				<li><a href="">钻石</a></li>
+      				<li><a href="">婚戒</a></li>
+      				<li><a href="">对戒</a></li>
+      				<li><a href="">配饰</a></li>
+      			</ul>
+			</div>
+			<div id="box02-lun">
+				<img id="lun-one" src="img/four-1.jpg" alt="">
+				<img  id="lun-two" src="img/four-2.jpg" alt="">
+				<img  id="lun-three" src="img/four-3.jpg" alt="">
+			</div>
+      		
+      	</div>
+      </div>
+
+      <!--------第七行-------->
+		<div id="seven-wrap">
+			<div id="seven">
+				<h2>婚戒推荐&全球每钻</h2>
+				<div id="zuanJ">
+					<img src="img/seven1.jpg" alt="">
+					<img src="img/seven2.jpg" alt="">
+					<img src="img/seven3.jpg" alt="">
+					<img src="img/seven4.jpg" alt="">
+				</div>
+			</div>
+		</div>
+   <!--------第八行-------->
+	<div id="eight-wrap"></div>
+
 </body>
 </html>
+<script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/swiper-3.4.2.min.js"></script>
 <script src="js/lunbo.js"></script>
+<script>
+	let myTmer=null;
+	let $imgs=$("#box01-left").find("img")
+	(function(){
+		let myTmer=null;
+		myTimer=setInterval(function(){
+			for(let i=0;i<3;i++){
+				for(let j=0;j<3;j++){
+					$imgs[0][j].style.opacity=0;
+				}
+				$imgs[0][i].style.opacity=1;	
+			}
+		},500)
+	})()
+</script>
 
 
 
